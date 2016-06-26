@@ -1,0 +1,16 @@
+{
+  "name": "tixcraft",
+  "version": "0.0.0",
+  "description": "tixcraft service helper for buying tickets",
+  "main": "tixcraft.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zlargon <zlargon@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "co": "^4.6.0",
+    "node-fetch": "^1.5.3"
+  }
+}
