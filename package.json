@@ -4,7 +4,7 @@
   "description": "tixcraft service helper for buying tickets",
   "main": "tixcraft.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint tixcraft example"
   },
   "author": "zlargon <zlargon@icloud.com>",
   "license": "MIT",

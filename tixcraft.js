@@ -27,7 +27,7 @@ const httpGet = (url, timeout) => new Promise((reslove, reject) => {
     res.on('end', () => {
       reslove(buffer.join(''));
     });
-  })
+  });
 
   // timeout
   if (typeof timeout === 'number') {
@@ -47,7 +47,7 @@ const httpGet = (url, timeout) => new Promise((reslove, reject) => {
 module.exports = _async_(function * (concertId, manual) {
   const host = 'http://tixcraft.com';
   const url  = `${host}/ticket/area/${concertId}`;
-  const html = yield httpGet(url).catch(e => {
+  const html = yield httpGet(url).catch(() => {
     throw new Error(`concert id '${concertId}' is not exist.`);
   });
 
