@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.20.0",
-    "co": "^4.6.0",
-    "node-fetch": "^1.5.3"
+    "co": "^4.6.0"
   }
 }

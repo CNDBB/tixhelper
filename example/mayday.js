@@ -1,14 +1,16 @@
 const tixcraft = require('../tixcraft');
 
-const concertId = '16_JRI_KH';
-const gameId = '1495';
-
-tixcraft(concertId, gameId)
+const concertId = '16_JRI_KH/1495';
+tixcraft(concertId)
 .then(areaList => {
-  console.log(`場次代號：${concertId} ${gameId}`);
+  console.log(`場次代號：${concertId}`);
+  if (areaList.length === 0) {
+    console.log('empty');
+    return;
+  }
 
   areaList.forEach(area => {
-    console.log(`${area.name}:\t${area.url}`);
+    console.log(`${area.info}:\t${area.url}`);
   });
 })
 .catch(e => {
