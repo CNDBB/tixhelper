@@ -9,7 +9,7 @@
   "author": "zlargon <zlargon@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^0.20.0",
+    "cheerio": "^0.22.0",
     "co": "^4.6.0"
   }
 }
