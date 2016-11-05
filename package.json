@@ -4,7 +4,7 @@
   "description": "tixcraft service helper for buying tickets",
   "main": "tixcraft.js",
   "scripts": {
-    "lint": "eslint tixcraft example"
+    "lint": "eslint tixcraft.js example"
   },
   "author": "zlargon <zlargon@icloud.com>",
   "license": "MIT",

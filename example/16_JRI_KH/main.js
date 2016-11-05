@@ -1,4 +1,4 @@
-const tixcraft = require('../tixcraft');
+const tixcraft = require('../../tixcraft');
 const concertId = '16_JRI_KH/1495';
 
 tixcraft(concertId)
